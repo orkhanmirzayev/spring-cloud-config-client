@@ -1,0 +1,13 @@
+spring: 
+  cloud:
+    config:
+      uri: http://localhost:8084
+      username: admin
+      password: admin
+  profiles:
+    active:
+    - default,prod,uat
+  application:
+    name: demo-service
+encrypt:
+  key: aaa
